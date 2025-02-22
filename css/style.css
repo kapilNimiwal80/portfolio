@@ -1730,7 +1730,7 @@ span.code-function {
 
 /*  */
 .profile-info .card {
-    background: #0d0d18;
+    background: #000000eb;
     padding: 18px;
     border-radius: 10px;
     margin-top: 15px;
@@ -1771,7 +1771,7 @@ span.code-function {
 }
 
 .skills-section .skill-item {
-    background: #0d0d18;
+    background: #000000bf;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -1828,7 +1828,7 @@ span.code-function {
 }
 
 .contact-form .custom-input {
-    background: #0d0d18;
+    background: #000;
     border: none;
     color: #fff;
     padding: 10px;

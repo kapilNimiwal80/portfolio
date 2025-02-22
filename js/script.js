@@ -91,20 +91,13 @@ $(document).ready(function () {
     });
 
 
-    // $(window).on("resize", function (e) {
-    //     checkScreenSize();
-    // });
-    // var logo = $(".navbar-brand img").attr("src");
+    $(window).on("resize", function (e) {
+        checkScreenSize();
+    });
+    var logo = $(".navbar-brand img").attr("src");
 
     
-    // checkScreenSize();
-    // function checkScreenSize() {
-    //     var newWindowWidth = $(window).width();
-    //     if (newWindowWidth <= 991) {
-    //         $("#header .collapse:not(.show)").find(".mobile_logo").remove();
-    //         $("#header .collapse:not(.show)").append("<div class='mobile_logo'>" + "<img src=" + logo + " alt=''>" + "</div>");
-    //     }
-    // }
+    
 
 
     /* ======= Scroll back to top ======= */
@@ -147,4 +140,30 @@ $(document).ready(function () {
 
 
    
+});
+
+$(document).ready(function() {
+    function handleMobileLogo() {
+        var newWindowWidth = $(window).width();
+        if (newWindowWidth <= 991) {
+            $("#header .collapse:not(.show)").find(".mobile_logo").remove();
+            $("#header .collapse:not(.show)").append(
+                '<div class="mobile_logo">' +
+                '    <a class="navbar-brand" href="index.html">' +
+                '        Kapil Nimiwal <div class="animate-ping dot-shap"></div>' +
+                '    </a>' +
+                '</div>'
+            );
+        } else {
+            $("#header .collapse:not(.show)").find(".mobile_logo").remove();
+        }
+    }
+
+    // Run on page load
+    handleMobileLogo();
+
+    // Run on window resize
+    $(window).resize(function() {
+        handleMobileLogo();
+    });
 });

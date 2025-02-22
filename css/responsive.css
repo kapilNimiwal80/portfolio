@@ -533,7 +533,7 @@
   header .collapse:not(.show) {
     display: block;
     position: fixed;
-    top: 0 !important;
+    top: -32px !important;
     left: -300px;
     height: 100vh;
     overflow-y: auto;
@@ -549,7 +549,6 @@
 
 header .collapse:not(.show).menu-show {
   left: -15px;
-  top: -32px !important;
   background: #2b2b2b;
 }
 
@@ -577,13 +576,13 @@ header .collapse:not(.show).menu-show {
     top: 0;
     left: 0;
     padding: 0 0 0 22px;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
-    background-color: #000;
+    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05); */
+    background-color: #2b2b2b;
     height: 95px;
     display: flex;
     align-items: center;
     right: 0;
-  }
+}
 
   .is-sticky .mobile_logo {
     padding: 15px 10px;
@@ -717,8 +716,8 @@ header .collapse:not(.show).menu-show {
   .skils {
     font-size: 16px;
 }
-  .contact-form .form-container {
-    padding: 16px;
+.contact-form .form-container {
+  padding: 30px 24px;
 }
 .profile-info{
   padding-bottom: 20px;
