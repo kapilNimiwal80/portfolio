@@ -20,8 +20,6 @@
 @media (min-width: 1200px) and (max-width: 1309px) {
   .hero-banner-text h1 {
     font-size: 80px;
-    min-height: 300px;
-    line-height: 100px;
   }
 
   #header {
@@ -126,9 +124,6 @@
 
   .hero-banner-text h1 {
     font-size: 70px;
-    min-height: 270px;
-    margin-bottom: 30px;
-    line-height: 90px;
   }
   .right-banner-img {
     margin-top: 49px;
@@ -174,11 +169,6 @@
 
   .rating-text {
     font-size: 14px;
-  }
-
-  .footer-section {
-    margin-top: 80px;
-    margin-bottom: 90px;
   }
 
   .footer-link-list {
@@ -275,6 +265,20 @@
 
 
 @media (max-width: 991.98px) {
+  .hero-banner-text {
+    padding: 0 0 60px;
+    text-align: center;
+}
+  .skills-section {
+    padding: 60px 0 0;
+}
+  .fixed.inset-0 {
+    max-width: calc(100% - 30px);
+}
+  #header {
+    max-width: calc(100% - 60px);
+    left: 30px;
+}
   .footer-link-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -389,8 +393,6 @@
 
   .hero-banner-text h1 {
     font-size: 57px;
-    line-height: 75px;
-    min-height: 230px;
 
 }
 .right-banner-img {
@@ -709,12 +711,19 @@
 }
 
 @media (max-width: 767.98px) {
+  .hero-section {
+    margin-top: 140px;
+}
+  .navbar-brand {
+    font-size: 22px;
+    margin: -6px auto 0 0;
+}
+#header {
+  max-width: calc(100% - 24px);
+  left: 12px;
+}
   .hero-banner-text h1 {
     font-size: 57px;
-    line-height: 75px;
-    min-height: 230px;
-    line-height: 72px;
-    text-align: center;
 }
 .hero-shap svg {
   align-self: center;
@@ -895,7 +904,7 @@
   }
 
   header .collapse:not(.show) {
-    left: -100%;
+    left: -110%;
     box-shadow: unset;
   }
 
@@ -1002,10 +1011,6 @@
   /* .hero-banner-text h1 {
     color: #e8e1e1f0;
 } */
-  .footer-section {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
 
   .choose-us-list {
     padding: 16px 16px 16px;
@@ -1013,7 +1018,6 @@
 
   .hero-banner-text h1 {
     font-size: 42px;
-    line-height: 57px;
 }
 .hero-right-line {
   display: none;
@@ -1066,8 +1070,11 @@
 }
 
   .hero-banner-text {
-    padding: 40px 0 60px;
+    padding: 0 0 30px;
   }
+  .skills-section {
+    padding: 25px 0 0;
+}
 
   .here-directly-left {
     grid-template-columns: 1fr;
