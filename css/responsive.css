@@ -533,7 +533,7 @@
   header .collapse:not(.show) {
     display: block;
     position: fixed;
-    top: 0;
+    top: 0 !important;
     left: -300px;
     height: 100vh;
     overflow-y: auto;
@@ -544,11 +544,14 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transition: all 0.5s;
     z-index: 99;
-  }
+    bottom: unset;
+}
 
-  header .collapse:not(.show).menu-show {
-    left: 0px;
-  }
+header .collapse:not(.show).menu-show {
+  left: -15px;
+  top: -32px !important;
+  background: #2b2b2b;
+}
 
   body.scroll-off {
     overflow-y: hidden;
@@ -711,6 +714,18 @@
 }
 
 @media (max-width: 767.98px) {
+  .skils {
+    font-size: 16px;
+}
+  .contact-form .form-container {
+    padding: 16px;
+}
+.profile-info{
+  padding-bottom: 20px;
+}
+.contact-form {
+  padding-bottom: 40px;
+}
   .hero-section {
     margin-top: 140px;
 }
@@ -1060,7 +1075,10 @@
 
 .section-header h2, .section-header .heading {
   font-size: 28px;
-  margin-bottom: 28px;
+  margin-bottom: 9px;
+}
+.section-header {
+  margin: 0 auto 30px;
 }
 .hero-section {
   margin-bottom: 60px;
