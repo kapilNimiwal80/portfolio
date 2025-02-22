@@ -1635,7 +1635,8 @@ body.scroll-off {
 
 .dot-shap {
     width: 10px;
-    height: 10px;background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    height: 10px;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
     /* background: linear-gradient(149deg, rgba(248, 58, 58, 1) 10%, rgba(241, 61, 212, 1) 50%, rgba(112, 0, 255, 1) 100%); */
     border-radius: 50%;
     position: absolute;
@@ -1884,7 +1885,6 @@ span.code-function {
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 20px;
-    font-weight: 600;
 }
 
 .section-header {
@@ -1919,4 +1919,74 @@ span.code-function {
     -webkit-background-clip: text;
     background-clip: text;
     position: relative;
+}
+
+.card.project-info {
+    background-color: rgb(24 24 24 / 89%) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid #f9deea2e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-link {
+    text-decoration: underline;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: relative;
+}
+
+.project-img {
+    height: 250px;
+}
+
+.projectImg {
+    height: 100%;
+}
+.projectImg  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.main-all-project{
+    position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #fff;
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+   font-weight: 600;
+    font-size: 19px;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset,-20px);
+    left: auto;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset,-20px);
+    right: auto;
+}
+.swiper-pagination-bullet{
+    opacity: .5;
+}
+.swiper-pagination-bullet-active {
+    background: linear-gradient(to right, #ff6b6b, #ffd93d);
+    opacity: 1;
+}
+.project-name {
+    font-size: 18px;
+}
+.project-dec {
+    font-size: 13px;
 }

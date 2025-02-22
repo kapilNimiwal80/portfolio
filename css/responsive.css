@@ -1013,7 +1013,21 @@ header .collapse:not(.show).menu-show {
 @media (min-width: 576px) and (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {
-
+  .project-img {
+    height: 210px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset,-10px);
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset,-10px);
+}
+.project-name {
+  font-size: 16px;
+}
+.project-dec {
+  font-size: 12px;
+}
   .industries-item a {
     width: 100%;
     font-size: 16px;
